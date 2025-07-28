@@ -1,0 +1,128 @@
+.premium-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.premium-carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.premium-carousel-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.premium-carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+
+.premium-carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.premium-carousel-indicator.active {
+  width: 24px;
+  background-color: white;
+}
+
+.premium-carousel-indicator-video {
+  position: relative;
+}
+
+.premium-carousel-indicator-video::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.premium-carousel-indicator-video.active::after {
+  border-radius: 12px;
+}
+
+.premium-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  z-index: 20;
+}
+
+.premium-carousel:hover .premium-carousel-arrow {
+  opacity: 1;
+}
+
+.premium-carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.premium-carousel-arrow.left {
+  left: 16px;
+}
+
+.premium-carousel-arrow.right {
+  right: 16px;
+}
+
+/* Caption styling */
+.premium-carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.premium-carousel-slide:hover .premium-carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .premium-carousel-arrow {
+    display: none;
+  }
+
+  .premium-carousel-indicator {
+    width: 6px;
+    height: 6px;
+  }
+
+  .premium-carousel-indicator.active {
+    width: 18px;
+  }
+}

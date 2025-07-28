@@ -1,0 +1,42 @@
+/* Logo optimizations for different screen sizes */
+.responsive-logo {
+  /* Base styles */
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .responsive-logo {
+    max-width: 120px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .responsive-logo {
+    max-width: 150px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .responsive-logo {
+    max-width: 180px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .responsive-logo {
+    max-width: 200px;
+  }
+}
+
+/* For high-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-logo {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
