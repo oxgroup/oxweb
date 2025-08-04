@@ -2,12 +2,15 @@
 
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedImage } from "@/components/animated-image"
+import { MainNavigation } from "@/components/main-navigation"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
 export default function NossaHistoria() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
+      <MainNavigation />
+      
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900"></div>

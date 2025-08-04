@@ -1,8 +1,8 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { AnimatedImage } from "@/components/animated-image"
 import { AnimatedButton } from "@/components/animated-button"
+import { ExecutivoCarousel } from "@/components/executivo-carousel"
 import { motion } from "framer-motion"
 
 export function GiftCardSection() {
@@ -21,42 +21,35 @@ export function GiftCardSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Vale-Presente OX</h2>
-              <h3 className="text-lg md:text-xl font-medium mb-6 text-zinc-100">O Presente Perfeito</h3>
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Menu do Chef</h2>
+              <h3 className="text-lg md:text-xl font-medium mb-6 text-zinc-100">O Executivo Perfeito</h3>
 
               <p className="text-base md:text-lg mb-6 text-zinc-100">
-                Procurando o presente perfeito? O Vale-Presente/Cartão Presente OX Room Steak House é uma opção
-                irresistível, oferecendo não apenas uma refeição deliciosa, mas momentos inesquecíveis de prazer
-                gastronômico e bem-estar.
+                O Menu Executivo "Sugestões do Chef" da The Ox Room Steakhouse oferece uma experiência gastronômica completa de segunda a sexta, das 11h30 às 15h30. Com opções que vão do suculento Assado de Tiras na brasa ao refinado Ribeye à Cavalo e o delicado Peixe Branco grelhado, cada prato é cuidadosamente elaborado pelo chef.
               </p>
 
               <p className="text-base md:text-lg mb-8 text-zinc-100">
-                Disponível em diferentes valores, é o presente ideal para aniversários, datas comemorativas ou
-                simplesmente para surpreender alguém especial com uma experiência única.
+                 As sobremesas artesanais, como a Panacota com fava tonka e pêssegos na brasa ou o intenso Mousse de Chocolate, finalizam perfeitamente a refeição. Com preços de R$ 79 a R$ 99, este menu representa a harmonia ideal entre qualidade, criatividade e valor.
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <AnimatedButton className="bg-zinc-900 hover:bg-zinc-800 text-white rounded-full py-3 px-8 text-base font-medium inline-flex items-center">
+                {/* <AnimatedButton className="bg-zinc-900 hover:bg-zinc-800 text-white rounded-full py-3 px-8 text-base font-medium inline-flex items-center">
                   Adquirir Vale-Presente
                 </AnimatedButton>
 
                 <AnimatedButton className="bg-transparent border-2 border-white hover:bg-white/10 text-white rounded-full py-3 px-8 text-base font-medium inline-flex items-center">
                   Saiba Mais
-                </AnimatedButton>
+                </AnimatedButton> */}
               </div>
             </motion.div>
           </div>
 
           <div className="relative md:order-1">
-            <AnimatedImage
-              src="/images/ox-gift-card.png"
-              alt="Vale-Presente OX Steakhouse"
-              width={600}
-              height={400}
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
-            <div className="absolute top-4 left-4 bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-bold">
-              Presente Especial
+            <div className="w-full h-[400px] relative">
+              <ExecutivoCarousel className="w-full h-full shadow-lg" />
+              <div className="absolute top-4 left-4 bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-bold z-20">
+                Sugestão do Chef
+              </div>
             </div>
           </div>
         </div>

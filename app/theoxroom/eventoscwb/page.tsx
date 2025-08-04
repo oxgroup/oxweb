@@ -77,7 +77,7 @@ export default function EventosCWB() {
               Cada Evento, Uma Jornada
             </h2>
             <p className="text-xl text-zinc-300 leading-relaxed mb-16">
-              Há mais de uma década, a OX Steakhouse tem sido o palco de momentos decisivos. 
+              Há quase uma década, a OX Steakhouse tem sido o palco de momentos decisivos. 
               Negócios que mudaram o rumo de empresas, celebrações que uniram famílias, 
               e encontros que criaram laços eternos. Aqui, não servimos apenas pratos excepcionais - 
               servimos o cenário perfeito para suas histórias mais importantes.
@@ -101,18 +101,22 @@ export default function EventosCWB() {
               </div>
               <div className="order-1 lg:order-2">
                 <span className="text-amber-400 text-sm font-semibold tracking-wider uppercase">
-                  Capítulo I: Negócios
+                  Para encontros de negócios
                 </span>
                 <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Onde Decisões<br />Moldam Futuros
+                  Ambientes <br />que encantam os olhos
                 </h3>
                 <p className="text-xl text-zinc-300 leading-relaxed mb-8">
-                  O CEO olhou ao redor da mesa. O ambiente sofisticado da OX, 
-                  a refeição impecável, o serviço discreto mas atento. 
-                  Era o cenário perfeito para anunciar a fusão que mudaria 
-                  o mercado. <strong className="text-amber-400">Menu executivo personalizado, 
-                  serviço ágil e discrição absoluta</strong> - os ingredientes para 
-                  decisões que fazem história.
+                  A The Ox Room Steakhouse oferece <strong className="text-amber-400">ambientes extraordinários que transformam 
+                  qualquer evento em uma experiência inesquecível</strong>. Localizada em um dos restaurantes 
+                  mais deslumbrantes do mundo, premiado internacionalmente por sua 
+                  decoração sofisticada e iluminação impecável, a casa disponibiliza espaços 
+                  equipados com   <strong className="text-amber-400">infraestrutura completa </strong>de última geração, incluindo telas de 
+                  alta definição e sistema de som profissional. Cada detalhe foi cuidadosamente 
+                  pensado para criar uma atmosfera única e elegante, onde a <strong className="text-amber-400">beleza arquitetônica 
+                  se harmoniza perfeitamente com a funcionalidade moderna</strong>, garantindo que seu evento
+                   encante e impressione todos os convidados, proporcionando momentos memoráveis em
+                   um cenário verdadeiramente espetacular. 
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
@@ -132,27 +136,36 @@ export default function EventosCWB() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="text-amber-400 text-sm font-semibold tracking-wider uppercase">
-                  Capítulo II: Celebrações
+                  Cardápio diferenciado
                 </span>
                 <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                   Momentos que<br />Ficam na Alma
                 </h3>
                 <p className="text-xl text-zinc-300 leading-relaxed mb-8">
-                  Bodas de ouro. Cinquenta anos de amor celebrados onde tudo começou - 
-                  na mesa ao lado da janela, agora reservada para a família inteira. 
-                  O <strong className="text-amber-400">menu degustação especial, 
-                  ambiente intimista e elegante</strong> criaram a atmosfera perfeita 
-                  para uma celebração que nenhum neto jamais esquecerá.
+                  O menu de eventos da Ox oferece diversas opções para <strong className="text-amber-400">diferentes tipos de 
+                  celebrações</strong>, começando com os "Cortes" de carne, que incluem New York (Chorizo), 
+                  T-Bone e Tomahawk (com ouro opcional), todos servidos com uma entrada (Salada Ox),
+                  acompanhamentos fixos como arroz, vegetais grelhados, salada de batatas,
+                  farofa Ox e fritas, além de sobremesas como mousse de chocolate e brownie. 
+                  Para uma atmosfera de networking. O "Menu Degustação" é uma <strong className="text-amber-400"> opção de jantar de 
+                  4 tempos</strong>, incluindo uma entrada, dois pratos principais e uma sobremesa em 
+                  porções reduzidas, com pratos como Salada Grelhada, Brusqueta de Carpaccio, 
+                  NY com Rigatoni Gorgonzola e Peixe do Dia com Mousseline, além de sobremesas 
+                  como frutas na brasa e cheesecake. Há também <strong className="text-amber-400">o "Finger Food", um pacote volante 
+                  ideal para eventos mais descontraídos,</strong> com serviço de 3 horas, oferecendo itens 
+                  como canapé de steak tartare, ceviche de peixe branco, risoto de costela e golden 
+                  ball. Pacotes de bebidas estão disponíveis em três opções (soft drinks; soft drinks + 
+                  chopp; soft drinks + 2 drinks selecionados)
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
-                    30-80 pessoas
+                    Cortes Nobres
                   </span>
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
-                    Atmosfera íntima
+                    Menu Personalizado
                   </span>
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
-                    Personalização total
+                    Finger Food
                   </span>
                 </div>
               </div>
@@ -180,7 +193,7 @@ export default function EventosCWB() {
               </div>
               <div className="order-1 lg:order-2">
                 <span className="text-amber-400 text-sm font-semibold tracking-wider uppercase">
-                  Capítulo III: Exclusividade
+                  Exclusividade
                 </span>
                 <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                   Quando o Extraordinário<br />Encontra o Exclusivo
@@ -195,7 +208,7 @@ export default function EventosCWB() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
-                    80-200 pessoas
+                    Infraestrutura completa
                   </span>
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">
                     Espaço privativo

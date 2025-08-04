@@ -1,7 +1,6 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { AnimatedImage } from "@/components/animated-image"
 import { AnimatedButton } from "@/components/animated-button"
 import { motion } from "framer-motion"
 
@@ -72,15 +71,28 @@ export function StorytellingSection() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent rounded-xl" />
-            <AnimatedImage
-              src="/images/ox-ambience.jpg"
-              alt="Ambiente sofisticado da OX Steakhouse"
-              width={800}
-              height={600}
-              className="w-full rounded-xl shadow-lg md:h-[500px] object-cover"
-            />
-            <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full">
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent rounded-xl z-10" />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative rounded-xl overflow-hidden shadow-lg"
+            >
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full md:h-[500px] object-cover"
+                poster="/images/ox-ambience.jpg"
+              >
+                <source src="/images/cwbVideo.mov" type="video/mp4" />
+                {/* Fallback message for browsers that don't support video */}
+                Seu navegador não suporta reprodução de vídeo.
+              </video>
+            </motion.div>
+            <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full z-20">
               <p className="text-xs text-white font-medium">Ambiente Exclusivo</p>
             </div>
           </div>

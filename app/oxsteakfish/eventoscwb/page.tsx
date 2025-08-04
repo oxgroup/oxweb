@@ -104,15 +104,19 @@ export default function EventosCWB() {
                   Capítulo I: Negócios
                 </span>
                 <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Onde Decisões<br />Moldam Futuros
+                  Ambientes <br />que encantam os olhos
                 </h3>
                 <p className="text-xl text-zinc-300 leading-relaxed mb-8">
-                  O CEO olhou ao redor da mesa. O ambiente sofisticado da OX Steak & Fish, 
-                  a fusão perfeita entre os melhores cortes e frutos do mar, o serviço discreto mas atento. 
-                  Era o cenário perfeito para anunciar a fusão que mudaria 
-                  o mercado. <strong className="text-amber-400">Menu executivo personalizado, 
-                  serviço ágil e discrição absoluta</strong> - os ingredientes para 
-                  decisões que fazem história.
+                  A The Ox Room Steakhouse oferece <strong className="text-amber-400">ambientes extraordinários que transformam 
+                  qualquer evento em uma experiência inesquecível</strong>. Localizada em um dos restaurantes 
+                  mais deslumbrantes do mundo, premiado internacionalmente por sua 
+                  decoração sofisticada e iluminação impecável, a casa disponibiliza espaços 
+                  equipados com   <strong className="text-amber-400">infraestrutura completa </strong>de última geração, incluindo telas de 
+                  alta definição e sistema de som profissional. Cada detalhe foi cuidadosamente 
+                  pensado para criar uma atmosfera única e elegante, onde a <strong className="text-amber-400">beleza arquitetônica 
+                  se harmoniza perfeitamente com a funcionalidade moderna</strong>, garantindo que seu evento
+                   encante e impressione todos os convidados, proporcionando momentos memoráveis em
+                   um cenário verdadeiramente espetacular. 
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm">

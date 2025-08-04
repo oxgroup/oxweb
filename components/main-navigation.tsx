@@ -45,7 +45,7 @@ export function MainNavigation() {
           <div className="flex items-center justify-between h-20 w-full">
             <div className="flex items-center flex-shrink-0">
               <Link href="/theoxroom">
-                <ResponsiveLogo className="h-10 w-auto" />
+                <ResponsiveLogo className="h-10 w-32" />
               </Link>
             </div>
 

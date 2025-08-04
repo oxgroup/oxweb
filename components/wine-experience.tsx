@@ -21,7 +21,15 @@ export function WineExperience() {
           
 
               <p className="text-base md:text-lg mb-8 text-zinc-300">
-                O conceito Farm to Table da The OX Room Steakhouse vai além de uma filosofia gastronômica – é nosso compromisso com a excelência. Através do nosso açougue central, realizamos toda a desossa do Angus e Wagyu, permitindo padronizar qualidade, maciez, sabor e tamanho de cada corte. Este processo nos garante controle total sobre a data exata de cada lote e rastreabilidade completa da origem, mantendo carnes com no máximo 90 dias do abate. Assim, levamos até sua mesa uma mistura única de qualidade e essência, conectando você diretamente com a origem dos ingredientes através de um processo artesanal que respeita o tempo da natureza e a tradição da melhor culinária.
+                O conceito Farm to Table da The OX Room Steakhouse vai além de uma filosofia 
+                gastronômica – é nosso compromisso com a excelência. Através do nosso açougue 
+                central, realizamos toda a desossa do Angus e Wagyu, <strong className="text-amber-500">permitindo padronizar 
+                qualidade, maciez, sabor e tamanho de cada corte</strong>. Este processo nos 
+                garante controle total sobre a data exata de cada lote e rastreabilidade 
+                completa da origem, mantendo carnes com no máximo 90 dias do abate. 
+                Assim, levamos até sua mesa uma mistura única de qualidade e essência, <strong className="text-amber-500">conectando 
+                você diretamente com a origem dos ingredientes através de um processo artesanal 
+                que respeita o tempo da natureza e a tradição</strong> da melhor culinária.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -38,7 +46,7 @@ export function WineExperience() {
 
           <div className="relative h-[300px] md:h-[500px]">
             <AnimatedImage
-              src="/images/ox-wine-selection.png"
+              src="/images/farmtotable.png"
               alt="Seleção de vinhos da OX Steakhouse"
               width={800}
               height={1000}

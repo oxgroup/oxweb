@@ -2,12 +2,15 @@
 
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedImage } from "@/components/animated-image"
+import { MainNavigation } from "@/components/main-navigation"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
 export default function FarmToTableModelo1() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
+      <MainNavigation />
+      
       {/* Hero Section with Parallax Effect */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
