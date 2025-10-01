@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function FarmToTableModelo1() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
-      <MainNavigation />
+      <MainNavigation logoType="oxsteakfish" />
       
       {/* Hero Section with Parallax Effect */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
