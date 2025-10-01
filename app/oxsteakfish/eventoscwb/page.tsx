@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 export default function EventosCWB() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
-      <MainNavigation />
+      <MainNavigation logoType="oxsteakfish" />
 
       {/* Hero Section - Storytelling */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -307,7 +307,7 @@ export default function EventosCWB() {
         </AnimatedSection>
       </div>
 
-      <Footer />
+      <Footer logoType="oxsteakfish" />
     </div>
   )
 }
