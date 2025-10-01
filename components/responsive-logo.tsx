@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils"
 interface ResponsiveLogoProps {
   className?: string
   darkMode?: boolean
+  logoType: 'theoxroom' | 'oxsteakfish'
 }
 
-export function ResponsiveLogo({ className, darkMode = false }: ResponsiveLogoProps) {
+export function ResponsiveLogo({ className, darkMode = false, logoType }: ResponsiveLogoProps) {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -27,13 +28,30 @@ export function ResponsiveLogo({ className, darkMode = false }: ResponsiveLogoPr
     return () => window.removeEventListener("resize", checkScreenSize)
   }, [])
 
+  const logos = {
+    theoxroom: {
+      src: "/images/TheOx_logo_Amarelo.png",
+      alt: "THE OX ROOM STEAKHOUSE",
+      width: 200,
+      height: 100,
+    },
+    oxsteakfish: {
+      src: "/images/ox-steak-fish-logo.png",
+      alt: "OX STEAK & FISH",
+      width: 200,
+      height: 100,
+    },
+  }
+
+  const selectedLogo = logos[logoType]
+
   return (
     <div className={cn("relative flex items-center justify-center", className)}>
       <Image
-        src="/images/TheOx_logo_Amarelo.png"
-        alt="THE OX ROOM STEAKHOUSE"
-        width={isMobile ? 120 : 200}
-        height={isMobile ? 60 : 100}
+        src={selectedLogo.src}
+        alt={selectedLogo.alt}
+        width={isMobile ? selectedLogo.width * 0.6 : selectedLogo.width}
+        height={isMobile ? selectedLogo.height * 0.6 : selectedLogo.height}
         className={cn("object-contain transition-all duration-300", darkMode ? "brightness-0 invert" : "")}
         priority
       />

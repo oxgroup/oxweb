@@ -1,7 +1,7 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedButton } from "@/components/animated-button"
 import { PremiumCarousel } from "@/components/premium-carousel"
-import { StorytellingSection } from "@/components/storytelling-section"
+import { OxSteakFishStorytellingSection } from "@/components/oxsteakfish-storytelling"
 import { MainNavigation } from "@/components/main-navigation"
 import { ChefSection } from "@/components/chef-section"
 import { MenuHighlights } from "@/components/menu-highlights"
@@ -73,7 +73,7 @@ export default function OxSteakFish() {
       <PerformanceMonitor visible={false} />
 
       {/* Header com navegação */}
-      <MainNavigation />
+      <MainNavigation logoType="oxsteakfish" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {/* Hero Section premium com vídeo de fundo */}
@@ -87,7 +87,7 @@ export default function OxSteakFish() {
             playsInline
             poster="/images/ox-interior.png"
           >
-            <source src="http://www.administrative.com.br/Amb.mov" type="video/mp4" />
+            <source src="/images/bcvideo.mp4" type="video/mp4" />
           </video>
           
           {/* Overlay premium com gradientes sofisticados */}
@@ -170,7 +170,7 @@ export default function OxSteakFish() {
         */}
         <div className="space-y-20 md:space-y-32">
           
-          <StorytellingSection />
+          <OxSteakFishStorytellingSection />
           <ChefSection />
           <WineExperience />
           <GiftCardSection />
@@ -228,7 +228,7 @@ export default function OxSteakFish() {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <Footer logoType="oxsteakfish" />
     </div>
   )
 }

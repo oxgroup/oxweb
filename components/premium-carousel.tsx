@@ -170,7 +170,7 @@ export function PremiumCarousel({
                 alt={currentSlide.alt}
                 fill
                 className="object-cover"
-                priority={currentIndex === 0}
+                priority={true}
               />
             ) : (
               <VideoSlide

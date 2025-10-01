@@ -3,7 +3,7 @@
 import styled from "styled-components"
 
 interface ContainerProps {
-  backgroundImage?: string
+  $backgroundImage?: string
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -18,7 +18,7 @@ export const Container = styled.div<ContainerProps>`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : "none")};
+    background-image: ${(props) => (props.$backgroundImage ? `url(${props.$backgroundImage})` : "none")};
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

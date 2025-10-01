@@ -10,7 +10,7 @@ import { useModel } from "../useModel"
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   modelName: string
   overlayNode: React.ReactNode
-  backgroundImage?: string
+  $backgroundImage?: string
   linkTo?: string
 }
 
@@ -18,7 +18,7 @@ export const ModelSection: React.FC<Props> = ({
   modelName,
   overlayNode,
   children,
-  backgroundImage,
+  $backgroundImage,
   linkTo,
   ...props
 }) => {
@@ -41,7 +41,7 @@ export const ModelSection: React.FC<Props> = ({
   return (
     <Container
       ref={sectionRef}
-      backgroundImage={backgroundImage}
+      $backgroundImage={$backgroundImage}
       onClick={handleClick}
       style={{ cursor: linkTo ? "pointer" : "default" }}
       {...props}

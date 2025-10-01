@@ -22,7 +22,7 @@ export default function EventosCWB() {
           playsInline
           poster="/images/ox-corporate-events.png"
         >
-          <source src="http://www.administrative.com.br/Amb.mov" type="video/mp4" />
+          <source src="http://oxsteakhouse.com.br/img/Amb.mov" type="video/mp4" />
         </video>
         
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black/90 z-10"></div>

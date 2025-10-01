@@ -14,14 +14,15 @@ export default function Home() {
           <ModelSection
             modelName="Model One"
             linkTo="/theoxroom"
-            backgroundImage="/images/restaurant-ambience.jpeg"
+            $backgroundImage="/images/restaurant-ambience.jpeg"
             overlayNode={
               <DefaultOverlayContent
                 label=""
                 description="Clique para entrar"
                 showLogo={true}
                 logoPath="/images/TheOx_logo_Amarelo.png"
-                
+                cardapioLink="/theoxroom/cardapio1"
+                reservaLink="/theoxroom/reserva1"
               />
             }
           />
@@ -29,13 +30,15 @@ export default function Home() {
           <ModelSection
             modelName="Model Two"
             linkTo="/oxsteakfish"
-            backgroundImage="/images/premium-steak-dish.jpeg"
+            $backgroundImage="/images/premium-steak-dish.jpeg"
             overlayNode={
               <DefaultOverlayContent
                 label=""
                 description="Clique para entrar"
                 showLogo={true}
                 logoPath="/images/ox-steak-fish-logo.png"
+                cardapioLink="/oxsteakfish/cardapio1"
+                reservaLink="/oxsteakfish/reserva1"
               />
             }
           />

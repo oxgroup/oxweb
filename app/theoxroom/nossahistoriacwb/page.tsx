@@ -3,13 +3,14 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedImage } from "@/components/animated-image"
 import { MainNavigation } from "@/components/main-navigation"
+import { PremiumCarousel, type CarouselSlide } from "@/components/premium-carousel"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
 export default function NossaHistoria() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
-      <MainNavigation />
+      <MainNavigation logoType={"theoxroom"} />
       
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
@@ -154,17 +155,17 @@ export default function NossaHistoria() {
                 </p>
               </div>
               
-              <div className="relative">
-                <AnimatedImage
-                  src="/images/ox-interior.png"
-                  alt="Ambiente elegante da The OX Room"
-                  width={600}
-                  height={400}
-                  className="w-full rounded-xl object-cover"
+              <div className="relative h-[400px] w-full">
+                <PremiumCarousel
+                  slides={[
+                    { type: 'image', src: '/images/ox-interior.png', alt: 'Ambiente elegante da The OX Room' },
+                    { type: 'image', src: '/images/restaurant-interior-elegant.png', alt: 'Interior elegante do restaurante' },
+                    { type: 'image', src: '/images/ox-ambience.jpg', alt: 'Ambiente do OX' },
+                    { type: 'image', src: '/images/private-dining.png', alt: 'Sala de jantar privada' },
+                    { type: 'image', src: '/images/bar-area.png', alt: 'Área do bar' },
+                  ]}
+                  className="h-full w-full rounded-xl overflow-hidden"
                 />
-                <div className="absolute bottom-4 right-4 glass-effect px-4 py-2 rounded-full">
-                  <p className="text-sm text-amber-400 font-medium">Ambiente Exclusivo</p>
-                </div>
               </div>
             </div>
           </div>

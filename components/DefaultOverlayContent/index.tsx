@@ -1,12 +1,15 @@
 import type React from "react"
 import { Container, Heading, Buttons, Logo } from "./styles"
 import Image from "next/image"
+import Link from "next/link"
 
 interface Props {
   label: string
   description: string
   showLogo?: boolean
   logoPath?: string
+  cardapioLink?: string
+  reservaLink?: string
 }
 
 export const DefaultOverlayContent: React.FC<Props> = ({
@@ -14,6 +17,8 @@ export const DefaultOverlayContent: React.FC<Props> = ({
   description,
   showLogo = false,
   logoPath = "/images/ox-logo.png",
+  cardapioLink,
+  reservaLink,
 }) => {
   return (
     <Container>
@@ -29,8 +34,20 @@ export const DefaultOverlayContent: React.FC<Props> = ({
       </Heading>
 
       <Buttons>
-        <button>Cardápio</button>
-        <button className="white">Faça sua Reserva</button>
+        {cardapioLink ? (
+          <Link href={cardapioLink}>
+            <button>Cardápio</button>
+          </Link>
+        ) : (
+          <button>Cardápio</button>
+        )}
+        {reservaLink ? (
+          <Link href={reservaLink}>
+            <button className="white">Faça sua Reserva</button>
+          </Link>
+        ) : (
+          <button className="white">Faça sua Reserva</button>
+        )}
       </Buttons>
     </Container>
   )

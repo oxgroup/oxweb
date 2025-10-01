@@ -6,7 +6,11 @@ import { ResponsiveLogo } from "@/components/responsive-logo"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 
-export function MainNavigation() {
+interface MainNavigationProps {
+  logoType: 'theoxroom' | 'oxsteakfish';
+}
+
+export function MainNavigation({ logoType }: MainNavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -24,13 +28,15 @@ export function MainNavigation() {
   }
 
   const navItems = [
-    { label: "Início", href: "/theoxroom" },
+    { label: "Início", href: `/${logoType}` },
     { label: "Menu", href: "https://drive.google.com/file/d/1y8EtRdkCbgftQYCf4-crh7a38dWEGhT-/view" },
     { label: "Vinhos", href: "https://livemenu.app/menu/5bfeb704fa271c9ee3c5ee51" },
-    { label: "Eventos", href: "/theoxroom/eventoscwb" },
+    { label: "Eventos", href: `/${logoType}/eventoscwb` },
     { label: "Delivery", href: "https://delivery.lexsis.com.br/oxsteak/index/26" },
-    { label: "Contato", href: "/theoxroom/contato" },
+    { label: "Contato", href: `/${logoType}/contato` },
   ]
+
+  const homeLink = `/${logoType}`;
 
   return (
     <>
@@ -44,8 +50,8 @@ export function MainNavigation() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20 w-full">
             <div className="flex items-center flex-shrink-0">
-              <Link href="/theoxroom">
-                <ResponsiveLogo className="h-10 w-32" />
+              <Link href={homeLink}>
+                <ResponsiveLogo logoType={logoType} className="h-10 w-32" />
               </Link>
             </div>
 

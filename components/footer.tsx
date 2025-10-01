@@ -4,7 +4,7 @@ import { ResponsiveLogo } from "@/components/responsive-logo"
 import { AnimatedButton } from "@/components/animated-button"
 import Link from "next/link"
 
-export function Footer() {
+export function Footer({ logoType }: { logoType: 'theoxroom' | 'oxsteakfish' }) {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -12,7 +12,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
-            <ResponsiveLogo className="h-16 w-auto mb-4" />
+            <ResponsiveLogo logoType={logoType} className="h-11 w-auto mb-8" />
             <p className="text-zinc-400 mb-6">
               Uma nova dimensão para a cena gastronômica no Brasil, combinando steakhouse moderna, entretenimento,
               american bar e lounge chic.
@@ -97,20 +97,12 @@ export function Footer() {
 
           <div>
             <h3 className="text-lg font-bold text-white mb-4">Horário de Funcionamento</h3>
-            <ul className="space-y-2 text-zinc-400">
-              <li className="flex justify-between">
-                <span>Segunda - Quinta:</span>
-                <span>18:00 - 00:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sexta - Sábado:</span>
-                <span>18:00 - 01:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Domingo:</span>
-                <span>12:00 - 22:00</span>
-              </li>
-            </ul>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-zinc-400">
+              <p><span className="font-semibold">Seg-Qui:</span> 11:30 - 15:30 / 17:30 - 22:30 </p>
+              <p><span className="font-semibold">Sex:</span> 11:30 - 15:30 / 17:30 - 23:30 </p>
+              <p><span className="font-semibold">Sábado:</span> 12:00 - 23:30 </p>
+              <p><span className="font-semibold">Domingo:</span> 11:30 - 21:30</p>
+            </div>
           </div>
 
           <div>
@@ -131,7 +123,7 @@ export function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Av. Exemplo, 1234 - São Paulo, SP</span>
+                <span>Alameda Dom Pedro II, 390 - Batel, Curitiba/PR </span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 mr-2 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,7 +134,7 @@ export function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span>(11) 5555-5555</span>
+                <span>(41) 3039-4577</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 mr-2 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -4,7 +4,7 @@ import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedButton } from "@/components/animated-button"
 import { motion } from "framer-motion"
 
-export function StorytellingSection() {
+export function OxSteakFishStorytellingSection() {
   return (
     <AnimatedSection direction="up" className="mb-16 md:mb-24 overflow-hidden">
       <div className="relative bg-zinc-800 rounded-2xl overflow-hidden">
@@ -21,7 +21,7 @@ export function StorytellingSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              The OX Room Steakhouse
+              OX Steak & Fish
             </motion.h2>
 
             <motion.p
@@ -31,8 +31,8 @@ export function StorytellingSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Localizada no Batel em Curitiba desde 2017, é considerada uma das mais belas e charmosas steakhouses do Brasil. 
-              Inspirada nas melhores casas de carne americanas, especializamo-nos em <strong className="text-amber-500"> cortes altos 100% Angus e Wagyu Certificado</strong>.
+              Uma nova abordagem da culinária de carnes e peixes, o OX Steak & Fish combina a tradição do churrasco com a leveza dos frutos do mar. 
+              Oferecemos uma experiência gastronômica única com <strong className="text-amber-500">ingredientes frescos e selecionados</strong>.
             </motion.p>
 
             <motion.p
@@ -42,9 +42,9 @@ export function StorytellingSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Seguimos o conceito farm to table com carnes de no máximo 90 dias do abate, desossadas em nosso açougue central. 
-              Com atendimento de excelência, serviço de manobrista, hostess e American Bar, oferecemos o ambiente ideal para 
-             <strong className="text-amber-500"> jantares especiais ou almoços executivos</strong>, complementando nossa seleção premium com opções de frutos do mar.
+              Nosso ambiente moderno e aconchegante é perfeito para qualquer ocasião. 
+              Com um menu diversificado que agrada a todos os paladares, o OX Steak & Fish é o lugar ideal para 
+             <strong className="text-amber-500"> almoços de negócios e jantares memoráveis</strong>.
             </motion.p>
 
             <motion.div
@@ -53,9 +53,9 @@ export function StorytellingSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <a href="/theoxroom/nossahistoriacwb">
-                <AnimatedButton className="bg-amber-600 hover:bg-amber-700 text-white rounded-full py-3 px-8 text-sm md:text-base font-medium inline-flex items-center">
-                  Conheça Nossa História
+              <a href="/oxsteakfish/nossahistoriacwb">
+                <AnimatedButton className="bg-amber-600 hover:bg-cyan-700 text-white rounded-full py-3 px-8 text-sm md:text-base font-medium inline-flex items-center">
+                  Descubra Nossa Proposta
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 ml-2"
@@ -71,7 +71,7 @@ export function StorytellingSection() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent rounded-xl z-10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-transparent rounded-xl z-10" />
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -85,15 +85,15 @@ export function StorytellingSection() {
                 loop
                 playsInline
                 className="w-full md:h-[500px] object-cover"
-                poster="/images/ox-ambience.jpg"
+                poster="/images/ox-steak-fish-ambience.jpg"
               >
-                <source src="/images/cwbVideo.mov" type="video/mp4" />
+                <source src="/images/bcvideo.mp4" type="video/mp4" />
                 {/* Fallback message for browsers that don't support video */}
                 Seu navegador não suporta reprodução de vídeo.
               </video>
             </motion.div>
             <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full z-20">
-              <p className="text-xs text-white font-medium">Ambiente Exclusivo</p>
+              <p className="text-xs text-white font-medium">Carnes e Peixes Frescos</p>
             </div>
           </div>
         </div>

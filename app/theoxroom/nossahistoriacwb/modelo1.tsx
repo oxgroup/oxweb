@@ -56,7 +56,7 @@ export default function NossaHistoriaModelo1() {
           playsInline
           poster="/images/ox-interior.png"
         >
-          <source src="http://www.administrative.com.br/Amb.mov" type="video/mp4" />
+          <source src="http://oxsteakhouse.com.br/img/Amb.mov" type="video/mp4" />
         </video>
         
         <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80 z-10"></div>
