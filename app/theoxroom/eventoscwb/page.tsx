@@ -315,7 +315,7 @@ export default function EventosCWB() {
         </AnimatedSection>
       </div>
 
-      <Footer />
+      <Footer logoType="theoxroom" />
     </div>
   )
 }
