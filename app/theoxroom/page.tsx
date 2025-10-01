@@ -1,7 +1,7 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedButton } from "@/components/animated-button"
-import { PremiumCarousel } from "@/components/premium-carousel"
-import { StorytellingSection } from "@/components/storytelling-section"
+import { FreeflowCarousel } from "@/components/freeflow-carousel";
+import { TheOxRoomStorytellingSection } from "@/components/theoxroom-storytelling"
 import { MainNavigation } from "@/components/main-navigation"
 import { ChefSection } from "@/components/chef-section"
 import { MenuHighlights } from "@/components/menu-highlights"
@@ -14,50 +14,49 @@ import { PerformanceMonitor } from "@/components/performance-monitor"
 import Link from "next/link"
 
 export default function TheOxRoom() {
-  // Carousel content com imagens e vídeos da OX Steakhouse
-  const carouselContent = [
+  // Carousel content for FreeflowCarousel
+  const freeflowCarouselContent = [
     {
-      type: "image" as const,
-      src: "/images/ox-interior.png",
+      src: "/images/1.png",
       alt: "Interior elegante da OX Steakhouse",
-      caption: "Um ambiente sofisticado para momentos inesquecíveis",
+      title: "Ambiente Sofisticado",
+      subtitle: "Um espaço para momentos inesquecíveis",
     },
     {
-      type: "image" as const,
-      src: "/images/chef-flame.jpg",
+      src: "/images/2.png",
       alt: "Menu do Chef - Experiência Executiva",
-      caption: "Menu do Chef - Uma experiência gastronômica única",
-      link: "/menu-do-chef",
+      title: "Menu do Chef",
+      subtitle: "Uma experiência gastronômica única",
     },
     {
-      type: "image" as const,
-      src: "/images/ox-tomahawk.png",
+      src: "/images/3.png",
       alt: "Tomahawk premium da OX Steakhouse",
-      caption: "Nosso emblemático corte Tomahawk, preparado com técnicas exclusivas",
+      title: "Cortes Emblemáticos",
+      subtitle: "Nosso Tomahawk, preparado com técnicas exclusivas",
     },
     {
-      type: "image" as const,
-      src: "/images/ox-drinks.png",
+      src: "/images/4.png",
       alt: "Carta de drinks autorais da OX Steakhouse",
-      caption: "Drinks autorais que elevam sua experiência gastronômica",
+      title: "Drinks Autorais",
+      subtitle: "Eleve sua experiência gastronômica",
     },
     {
-      type: "image" as const,
       src: "/images/ox-wine-selection.png",
       alt: "Seleção de vinhos da OX Steakhouse",
-      caption: "Uma impressionante carta de vinhos de mais de 15 países",
+      title: "Carta de Vinhos",
+      subtitle: "Uma impressionante seleção de mais de 15 países",
     },
     {
-      type: "image" as const,
       src: "/images/ox-chef.png",
       alt: "Chef Bruno Faro preparando um prato especial",
-      caption: "Chef Bruno Faro: maestria e paixão em cada prato",
+      title: "Chef Bruno Faro",
+      subtitle: "Maestria e paixão em cada prato",
     },
     {
-      type: "image" as const,
       src: "/images/ox-lounge.png",
       alt: "Área lounge da OX Steakhouse",
-      caption: "Lounge chic para momentos de descontração e prazer",
+      title: "Lounge Chic",
+      subtitle: "Momentos de descontração e prazer",
     },
   ]
 
@@ -67,7 +66,7 @@ export default function TheOxRoom() {
       <PerformanceMonitor visible={false} />
 
       {/* Header com navegação */}
-      <MainNavigation />
+      <MainNavigation logoType="theoxroom" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {/* Hero Section premium com vídeo de fundo */}
@@ -81,7 +80,7 @@ export default function TheOxRoom() {
             playsInline
             poster="/images/ox-interior.png"
           >
-            <source src="http://www.administrative.com.br/Amb.mov" type="video/mp4" />
+            <source src="/images/cwbVideo.mov" type="video/mp4" />
           </video>
           
           {/* Overlay premium com gradientes sofisticados */}
@@ -151,10 +150,9 @@ export default function TheOxRoom() {
              </p>
          </div>
           <div className="glass-effect rounded-3xl p-2 md:p-4">
-            <PremiumCarousel
-              slides={carouselContent}
-              className="w-full h-[450px] md:h-[650px] rounded-2xl shadow-2xl overflow-hidden"
-              pauseOnVideo={true}
+            <FreeflowCarousel
+              slides={freeflowCarouselContent}
+              className="w-full"
             />
           </div>
         </AnimatedSection>
@@ -164,7 +162,7 @@ export default function TheOxRoom() {
         */}
         <div className="space-y-20 md:space-y-32">
           
-          <StorytellingSection />
+          <TheOxRoomStorytellingSection />
           <ChefSection />
           <WineExperience />
           <GiftCardSection />
@@ -222,7 +220,7 @@ export default function TheOxRoom() {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <Footer logoType="theoxroom" />
     </div>
   )
 }
