@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 export default function ChefMenuPage() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
-      <MainNavigation />
+      <MainNavigation logoType="theoxroom" />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <motion.div
@@ -27,7 +27,7 @@ export default function ChefMenuPage() {
         <ChefMenuSection />
       </div>
 
-      <Footer />
+      <Footer logoType="theoxroom" />
     </div>
   )
 }
