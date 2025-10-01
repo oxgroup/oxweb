@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function DryAgingPage() {
   return (
     <div className="relative bg-zinc-900 text-zinc-100 min-h-screen">
-      <MainNavigation />
+      <MainNavigation logoType="oxsteakfish" />
       
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
