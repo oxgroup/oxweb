@@ -87,7 +87,7 @@ export default function OxSteakFish() {
             playsInline
             poster="/images/ox-interior.png"
           >
-            <source src="http://www.oxsteakhouse.com.br/img/bcvideo.mp4" type="video/mp4" />
+            <source src="/images/bcvideo.mov" type="video/mp4" />
           </video>
           
           {/* Overlay premium com gradientes sofisticados */}
