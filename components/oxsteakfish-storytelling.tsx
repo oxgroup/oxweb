@@ -87,7 +87,7 @@ export function OxSteakFishStorytellingSection() {
                 className="w-full md:h-[500px] object-cover"
                 poster="/images/ox-steak-fish-ambience.jpg"
               >
-                <source src="http://www.oxsteakfish.com.br/img/bcvideo.mov" type="video/mp4" />
+                <source src="http://www.oxsteakhouse.com.br/img/bcvideo.mov" type="video/mp4" />
                 {/* Fallback message for browsers that don't support video */}
                 Seu navegador não suporta reprodução de vídeo .
               </video>
