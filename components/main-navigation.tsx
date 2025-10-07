@@ -40,6 +40,10 @@ export function MainNavigation({ logoType }: MainNavigationProps) {
     navItems.push({ label: "Ox Steakfish", href: "/oxsteakfish" });
   }
 
+  if (logoType === 'oxsteakfish') {
+    navItems.push({ label: "The Ox Room", href: "/theoxroom" });
+  }
+
   const homeLink = `/${logoType}`;
 
   return (
