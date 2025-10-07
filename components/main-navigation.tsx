@@ -36,6 +36,10 @@ export function MainNavigation({ logoType }: MainNavigationProps) {
     { label: "Contato", href: `/${logoType}/contato` },
   ]
 
+  if (logoType === 'theoxroom') {
+    navItems.push({ label: "Ox Steakfish", href: "/oxsteakfish" });
+  }
+
   const homeLink = `/${logoType}`;
 
   return (
