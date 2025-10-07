@@ -18,9 +18,9 @@ export default function TheOxRoom() {
   const freeflowCarouselContent = [
     {
       src: "/images/1.png",
-      alt: "Interior elegante da OX Steakhouse",
-      title: "Ambiente Sofisticado",
-      subtitle: "Um espaço para momentos inesquecíveis",
+      alt: "Sugestão do Chef - Vibe Dinner",
+      title: "Vibe Dinner",
+      subtitle: "A cada trimestre um menu jantar exclusivo.",
     },
     {
       src: "/images/2.png",

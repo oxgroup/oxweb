@@ -37,7 +37,7 @@ export function MainNavigation({ logoType }: MainNavigationProps) {
   ]
 
   if (logoType === 'theoxroom') {
-    navItems.push({ label: "Ox Steakfish", href: "/oxsteakfish" });
+    navItems.push({ label: "Ox Steak&fish", href: "/oxsteakfish" });
   }
 
   if (logoType === 'oxsteakfish') {
